@@ -16,8 +16,8 @@
   </main>
 
   <script>
-    // Load navbar dynamically
-    fetch("navbar.html")
+    // Load navbar dynamically from the root folder
+    fetch("root/navbar.html")
       .then(response => response.text())
       .then(data => { document.getElementById("navbar").innerHTML = data; });
   </script>
