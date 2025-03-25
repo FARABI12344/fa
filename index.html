@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Placeholder - FARABI.me</title>
-  <link rel="stylesheet" href="styles/styles.css">
+  <title>FARABI.me</title>
 </head>
 <body>
 
@@ -16,18 +15,12 @@
     <p>This is a placeholder page.</p>
   </main>
 
-  <!-- Load footer later -->
-  <div id="footer"></div>
-
   <script>
     // Load navbar dynamically
-    fetch("root/navbar.html")
+    fetch("navbar.html")
       .then(response => response.text())
       .then(data => { document.getElementById("navbar").innerHTML = data; });
-
-    // Load footer later
   </script>
 
 </body>
 </html>
-
